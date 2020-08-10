@@ -1,0 +1,9 @@
+[
+     {
+     "id" : 1,
+     "pregunta" :"El queso se fabrica de:",
+     "opciones" : ["Las flores","La harina","La leche","Las uvas","El azúcar"],
+     "respuesta":"La leche"
+     }
+
+]
