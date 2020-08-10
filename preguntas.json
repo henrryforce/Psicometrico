@@ -46,6 +46,138 @@
           "pregunta":".- De estas cinco palabras una pertenece a una clase diferente ¿Cuál  es?",
           "opciones":["Agua","Platino","Café","Té","Cerveza"],
           "respuesta":["Platino"]
+     },{
+
+     "id":9,
+     "pregunta":"El zapato protege al pie, y el sombrero protege a:",
+     "opciones":["La cabeza","La mano","El dedo","El brazo","La rodilla"],
+     "respuesta":["La cabeza"]
+     },
+     {
+          "id":10,
+          "pregunta":"Escriba los números que faltan a esta serie",
+          "opciones":["6","9","12","x","18","21","24","x","30"],
+          "respuesta":["15","27"]
+     },
+     {
+          "id":11,
+          "pregunta":"El triángulo es una figura formada por",
+          "opciones":["4 lados","6 lados","65 lados","3 lados","9 lados"],
+          "respuesta":["3 lados"]
+     },
+     {
+          "id":12,
+          "pregunta":"Lo contrario de negro es:",
+          "opciones":["Oscuro","Sombra","Opaco","Sucio","Blanco"],
+          "respuesta":["Blanco"]
+     },
+     {
+          "id":13,
+          "pregunta":"De estas cinco palabras una pertenece a una clase diferente ¿Cuál  es?",
+          "opciones":["Enrique","Pedro","Ana","José","Carlos"],
+          "respuesta":["Ana"]
+     },
+     {
+          "id":14,
+          "pregunta":"El naranjo es un árbol, y el perro es:",
+          "opciones":["Un objeto","Un animal","Una cosa","Un mineral","Un vegetal"],
+          "respuesta":["Un animal"]
+     },
+     {
+          "id":15,
+          "pregunta":"Escriba los números que faltan a esta serie:",
+          "opciones":["7","9","11","13","x","17","x","21","23"],
+          "respuesta":["15","19"]
+     },
+     {
+          "id":16,
+          "pregunta":"El gato es un:",
+          "opciones":["Mamifero","Insecto","Ave","Pez","Reptil"],
+          "respuesta":["Mamifero"]
+     },
+     {
+          "id":17,
+          "pregunta":"Lo contrario de triste es:",
+          "opciones":["Alegre","Preocupado","Dolorido","Desgraciado","Enfermo"],
+          "respuesta":["Alegre"]
+     },
+     {
+          "id":18,
+          "pregunta":"De estas cinco palabras una pertenece a una clase diferente ¿Cuál  es?",
+          "opciones":["Bogotá","Lima","Alpes","Caracas","Quito"],
+          "respuesta":["Alpes"]
+     },
+     {
+          "id":19,
+          "pregunta":"La piel cubre al hombre, y las plumas cubren a:",
+          "opciones":["La vaca","El perro","El gato","La gallina","El caballo"],
+          "respuesta":["La gallina"]
+     },
+     {
+          "id":20,
+          "pregunta":"Treinta es el triple de:",
+          "opciones":["7","14","21","28","x","42","49","x","63","70"],
+          "respuesta":["35","56"]
+     },
+     {
+          "id":21,
+          "pregunta":"Treinta es el triple de:",
+          "opciones":["Quince","Tres","Diez","Doce","Cinco"],
+          "respuesta":["Diez"]
+     },
+     {
+          "id":22,
+          "pregunta":"Lo contrario de calor es:",
+          "opciones":["Sudor","Fatiga","Blanco","Frío","Luz"],
+          "respuesta":["Frío"]
+     },
+     {
+          "id":23,
+          "pregunta":"De estas cinco palabras, una pertenece a una clase diferente ¿Cuál  es?",
+          "opciones":["Cuchara","Plato","Tenedor","Cuchillo","Cucharita"],
+          "respuesta":["Plato"]
+     },
+     {
+          "id":24,
+          "pregunta":"Para coser se emplea la aguja, y para dibujar se emplea  el:",
+          "opciones":["Lápiz","Bastón","Tintero","Pie","Ojo"],
+          "respuesta":["Lápiz"]
+     },
+     {
+          "id":25,
+          "pregunta":"Escriba los números que faltan a esta serie:",
+          "opciones":["40","36","32","28","x","20","16","12","x","4"],
+          "respuesta":["24","8"]
+     },
+     {
+          "id":26,
+          "pregunta":"La cordillera de los Andes está en:",
+          "opciones":["Europa","Asia","América","Austria","África"],
+          "respuesta":["América"]
+     },
+     {
+          "id":27,
+          "pregunta":"Lo contrario de arriba es:",
+          "opciones":["Dentro","Abajo","Cerca","Completo","Lejos"],
+          "respuesta":["Abajo"]
+     },
+     {
+          "id":28,
+          "pregunta":"De estas cinco palabras, una pertenece a una clase diferente ¿Cuál  es?",
+          "opciones":["General","Teniente","Capitán","Presidente","Coronel"],
+          "respuesta":["Presidente"]
+     },
+     {
+          "id":29,
+          "pregunta":"Con el cuero se fabrica el calzado, y con la tela:",
+          "opciones":["Piel","Lana","Algodón","Seda","Vestidos"],
+          "respuesta":["Vestidos"]
+     },
+     {
+          "id":30,
+          "pregunta":"Escriba los dos números que faltan a esta serie:",
+          "opciones":["64","58","52","46","x","34","28","x","16","10","4"],
+          "respuesta":["40","22"]
      }
 
 ]
