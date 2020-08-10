@@ -44,8 +44,8 @@
      {
           "id":8,
           "pregunta":".- De estas cinco palabras una pertenece a una clase diferente ¿Cuál  es?",
-          "opciones":["Agua"],
-          "respuesta":[]
+          "opciones":["Agua","Platino","Café","Té","Cerveza"],
+          "respuesta":["Platino"]
      }
 
 ]
