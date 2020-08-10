@@ -3,16 +3,31 @@
      "id" : 1,
      "pregunta" :"El queso se fabrica de:",
      "opciones" : ["Las flores","La harina","La leche","Las uvas","El azúcar"],
-     "respuesta":"La leche"
+     "respuesta":["La leche"]
      },
      {
      "id":2,
      "pregunta":"Lo contrario de abierto es:",
      "opciones":["Liso","Cerrado","Delante","Claro","Despejado"],
-     "respuesta":"Cerrado"
+     "respuesta":["Cerrado"]
      },
      {
-
+     "id":3,
+     "pregunta":"De las siguientes palabras una pertenece a una clase diferente ¿cuál  es?",
+     "opciones":["Rojo","Amarillo","Morado","Bandera","Verde"],
+     "respuesta":["Bandera"]
+     },
+     {
+          "id":4,
+          "pregunta":"El pájaro canta y el perro",
+          "opciones":["Habla","Rebuzna","Cacareo","Maúlla","Ladra"],
+          "respuesta":["Ladra"]
+     },
+     {
+          "id":5,
+          "pregunta":"Escribe los dos números que faltan a esta serie",
+          "opciones":["10","15","20","25","x","35","40","x","50"],
+          "respuesta":["30","45"]
      }
 
 ]
