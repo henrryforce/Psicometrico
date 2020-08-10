@@ -28,6 +28,21 @@
           "pregunta":"Escribe los dos números que faltan a esta serie",
           "opciones":["10","15","20","25","x","35","40","x","50"],
           "respuesta":["30","45"]
+     },
+     {
+     "id":6,
+     "pregunta":"Para medir la temperatura se emplea",
+     "opciones":["Litro","Gramo","Termómetro","Metro","Kilowatio"],
+     "respuesta":["Termómetro"]
+     },
+     {
+     "id":7,
+     "pregunta":"Lo contrario de dormido es",
+     "opciones":["Noche","Luz","Amanecer","Despierto","Día"],
+     "respuesta":["Despierto"]
+     },
+     {
+          
      }
 
 ]
