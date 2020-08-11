@@ -34,7 +34,7 @@ btn.addEventListener('submit',function(e){
      dato.push(grado);
           enviardatos(dato);
           location.href='preguntas.html';
-     }, 1500);
+     }, 1000);
      }
      
 });
