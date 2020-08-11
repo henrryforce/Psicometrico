@@ -1,363 +1,971 @@
 [
      {
-     "id" : 1,
-     "pregunta" :"El queso se fabrica de:",
-     "opciones" : ["Las flores","La harina","La leche","Las uvas","El azúcar"],
-     "respuesta":["La leche"]
+          "id": 1,
+          "pregunta": "El queso se fabrica de:",
+          "opciones": [
+               "Las flores",
+               "La harina",
+               "La leche",
+               "Las uvas",
+               "El azúcar"
+          ],
+          "respuesta": [
+               "La leche"
+          ],
+          "tipo": 1
      },
      {
-     "id":2,
-     "pregunta":"Lo contrario de abierto es:",
-     "opciones":["Liso","Cerrado","Delante","Claro","Despejado"],
-     "respuesta":["Cerrado"]
+          "id": 2,
+          "pregunta": "Lo contrario de abierto es:",
+          "opciones": [
+               "Liso",
+               "Cerrado",
+               "Delante",
+               "Claro",
+               "Despejado"
+          ],
+          "respuesta": [
+               "Cerrado"
+          ],
+          "tipo": 1
      },
      {
-     "id":3,
-     "pregunta":"De las siguientes palabras una pertenece a una clase diferente ¿cuál  es?",
-     "opciones":["Rojo","Amarillo","Morado","Bandera","Verde"],
-     "respuesta":["Bandera"]
+          "id": 3,
+          "pregunta": "De las siguientes palabras una pertenece a una clase diferente ¿cuál  es?",
+          "opciones": [
+               "Rojo",
+               "Amarillo",
+               "Morado",
+               "Bandera",
+               "Verde"
+          ],
+          "respuesta": [
+               "Bandera"
+          ],
+          "tipo": 1
      },
      {
-          "id":4,
-          "pregunta":"El pájaro canta y el perro",
-          "opciones":["Habla","Rebuzna","Cacareo","Maúlla","Ladra"],
-          "respuesta":["Ladra"]
+          "id": 4,
+          "pregunta": "El pájaro canta y el perro",
+          "opciones": [
+               "Habla",
+               "Rebuzna",
+               "Cacareo",
+               "Maúlla",
+               "Ladra"
+          ],
+          "respuesta": [
+               "Ladra"
+          ],
+          "tipo": 1
      },
      {
-          "id":5,
-          "pregunta":"Escribe los dos números que faltan a esta serie",
-          "opciones":["10","15","20","25","x","35","40","x","50"],
-          "respuesta":["30","45"]
+          "id": 5,
+          "pregunta": "Escribe los dos números que faltan a esta serie",
+          "opciones": [
+               "10",
+               "15",
+               "20",
+               "25",
+               "x",
+               "35",
+               "40",
+               "x",
+               "50"
+          ],
+          "respuesta": [
+               "30",
+               "45"
+          ],
+          "tipo": 2
      },
      {
-     "id":6,
-     "pregunta":"Para medir la temperatura se emplea",
-     "opciones":["Litro","Gramo","Termómetro","Metro","Kilowatio"],
-     "respuesta":["Termómetro"]
+          "id": 6,
+          "pregunta": "Para medir la temperatura se emplea",
+          "opciones": [
+               "Litro",
+               "Gramo",
+               "Termómetro",
+               "Metro",
+               "Kilowatio"
+          ],
+          "respuesta": [
+               "Termómetro"
+          ],
+          "tipo": 1
      },
      {
-     "id":7,
-     "pregunta":"Lo contrario de dormido es",
-     "opciones":["Noche","Luz","Amanecer","Despierto","Día"],
-     "respuesta":["Despierto"]
+          "id": 7,
+          "pregunta": "Lo contrario de dormido es",
+          "opciones": [
+               "Noche",
+               "Luz",
+               "Amanecer",
+               "Despierto",
+               "Día"
+          ],
+          "respuesta": [
+               "Despierto"
+          ],
+          "tipo": 1
      },
      {
-          "id":8,
-          "pregunta":".- De estas cinco palabras una pertenece a una clase diferente ¿Cuál  es?",
-          "opciones":["Agua","Platino","Café","Té","Cerveza"],
-          "respuesta":["Platino"]
-     },{
-
-     "id":9,
-     "pregunta":"El zapato protege al pie, y el sombrero protege a:",
-     "opciones":["La cabeza","La mano","El dedo","El brazo","La rodilla"],
-     "respuesta":["La cabeza"]
+          "id": 8,
+          "pregunta": ".- De estas cinco palabras una pertenece a una clase diferente ¿Cuál  es?",
+          "opciones": [
+               "Agua",
+               "Platino",
+               "Café",
+               "Té",
+               "Cerveza"
+          ],
+          "respuesta": [
+               "Platino"
+          ],
+          "tipo": 1
      },
      {
-          "id":10,
-          "pregunta":"Escriba los números que faltan a esta serie",
-          "opciones":["6","9","12","x","18","21","24","x","30"],
-          "respuesta":["15","27"]
+          "id": 9,
+          "pregunta": "El zapato protege al pie, y el sombrero protege a:",
+          "opciones": [
+               "La cabeza",
+               "La mano",
+               "El dedo",
+               "El brazo",
+               "La rodilla"
+          ],
+          "respuesta": [
+               "La cabeza"
+          ],
+          "tipo": 1
      },
      {
-          "id":11,
-          "pregunta":"El triángulo es una figura formada por",
-          "opciones":["4 lados","6 lados","65 lados","3 lados","9 lados"],
-          "respuesta":["3 lados"]
+          "id": 10,
+          "pregunta": "Escriba los números que faltan a esta serie",
+          "opciones": [
+               "6",
+               "9",
+               "12",
+               "x",
+               "18",
+               "21",
+               "24",
+               "x",
+               "30"
+          ],
+          "respuesta": [
+               "15",
+               "27"
+          ],
+          "tipo": 2
      },
      {
-          "id":12,
-          "pregunta":"Lo contrario de negro es:",
-          "opciones":["Oscuro","Sombra","Opaco","Sucio","Blanco"],
-          "respuesta":["Blanco"]
+          "id": 11,
+          "pregunta": "El triángulo es una figura formada por",
+          "opciones": [
+               "4 lados",
+               "6 lados",
+               "65 lados",
+               "3 lados",
+               "9 lados"
+          ],
+          "respuesta": [
+               "3 lados"
+          ],
+          "tipo": 1
      },
      {
-          "id":13,
-          "pregunta":"De estas cinco palabras una pertenece a una clase diferente ¿Cuál  es?",
-          "opciones":["Enrique","Pedro","Ana","José","Carlos"],
-          "respuesta":["Ana"]
+          "id": 12,
+          "pregunta": "Lo contrario de negro es:",
+          "opciones": [
+               "Oscuro",
+               "Sombra",
+               "Opaco",
+               "Sucio",
+               "Blanco"
+          ],
+          "respuesta": [
+               "Blanco"
+          ],
+          "tipo": 1
      },
      {
-          "id":14,
-          "pregunta":"El naranjo es un árbol, y el perro es:",
-          "opciones":["Un objeto","Un animal","Una cosa","Un mineral","Un vegetal"],
-          "respuesta":["Un animal"]
+          "id": 13,
+          "pregunta": "De estas cinco palabras una pertenece a una clase diferente ¿Cuál  es?",
+          "opciones": [
+               "Enrique",
+               "Pedro",
+               "Ana",
+               "José",
+               "Carlos"
+          ],
+          "respuesta": [
+               "Ana"
+          ],
+          "tipo": 1
      },
      {
-          "id":15,
-          "pregunta":"Escriba los números que faltan a esta serie:",
-          "opciones":["7","9","11","13","x","17","x","21","23"],
-          "respuesta":["15","19"]
+          "id": 14,
+          "pregunta": "El naranjo es un árbol, y el perro es:",
+          "opciones": [
+               "Un objeto",
+               "Un animal",
+               "Una cosa",
+               "Un mineral",
+               "Un vegetal"
+          ],
+          "respuesta": [
+               "Un animal"
+          ],
+          "tipo": 1
      },
      {
-          "id":16,
-          "pregunta":"El gato es un:",
-          "opciones":["Mamifero","Insecto","Ave","Pez","Reptil"],
-          "respuesta":["Mamifero"]
+          "id": 15,
+          "pregunta": "Escriba los números que faltan a esta serie:",
+          "opciones": [
+               "7",
+               "9",
+               "11",
+               "13",
+               "x",
+               "17",
+               "x",
+               "21",
+               "23"
+          ],
+          "respuesta": [
+               "15",
+               "19"
+          ],
+          "tipo": 2
      },
      {
-          "id":17,
-          "pregunta":"Lo contrario de triste es:",
-          "opciones":["Alegre","Preocupado","Dolorido","Desgraciado","Enfermo"],
-          "respuesta":["Alegre"]
+          "id": 16,
+          "pregunta": "El gato es un:",
+          "opciones": [
+               "Mamifero",
+               "Insecto",
+               "Ave",
+               "Pez",
+               "Reptil"
+          ],
+          "respuesta": [
+               "Mamifero"
+          ],
+          "tipo": 1
      },
      {
-          "id":18,
-          "pregunta":"De estas cinco palabras una pertenece a una clase diferente ¿Cuál  es?",
-          "opciones":["Bogotá","Lima","Alpes","Caracas","Quito"],
-          "respuesta":["Alpes"]
+          "id": 17,
+          "pregunta": "Lo contrario de triste es:",
+          "opciones": [
+               "Alegre",
+               "Preocupado",
+               "Dolorido",
+               "Desgraciado",
+               "Enfermo"
+          ],
+          "respuesta": [
+               "Alegre"
+          ],
+          "tipo": 1
      },
      {
-          "id":19,
-          "pregunta":"La piel cubre al hombre, y las plumas cubren a:",
-          "opciones":["La vaca","El perro","El gato","La gallina","El caballo"],
-          "respuesta":["La gallina"]
+          "id": 18,
+          "pregunta": "De estas cinco palabras una pertenece a una clase diferente ¿Cuál  es?",
+          "opciones": [
+               "Bogotá",
+               "Lima",
+               "Alpes",
+               "Caracas",
+               "Quito"
+          ],
+          "respuesta": [
+               "Alpes"
+          ],
+          "tipo": 1
      },
      {
-          "id":20,
-          "pregunta":"Treinta es el triple de:",
-          "opciones":["7","14","21","28","x","42","49","x","63","70"],
-          "respuesta":["35","56"]
+          "id": 19,
+          "pregunta": "La piel cubre al hombre, y las plumas cubren a:",
+          "opciones": [
+               "La vaca",
+               "El perro",
+               "El gato",
+               "La gallina",
+               "El caballo"
+          ],
+          "respuesta": [
+               "La gallina"
+          ],
+          "tipo": 1
      },
      {
-          "id":21,
-          "pregunta":"Treinta es el triple de:",
-          "opciones":["Quince","Tres","Diez","Doce","Cinco"],
-          "respuesta":["Diez"]
+          "id": 20,
+          "pregunta": "Treinta es el triple de:",
+          "opciones": [
+               "7",
+               "14",
+               "21",
+               "28",
+               "x",
+               "42",
+               "49",
+               "x",
+               "63",
+               "70"
+          ],
+          "respuesta": [
+               "35",
+               "56"
+          ],
+          "tipo": 2
      },
      {
-          "id":22,
-          "pregunta":"Lo contrario de calor es:",
-          "opciones":["Sudor","Fatiga","Blanco","Frío","Luz"],
-          "respuesta":["Frío"]
+          "id": 21,
+          "pregunta": "Treinta es el triple de:",
+          "opciones": [
+               "Quince",
+               "Tres",
+               "Diez",
+               "Doce",
+               "Cinco"
+          ],
+          "respuesta": [
+               "Diez"
+          ],
+          "tipo": 1
      },
      {
-          "id":23,
-          "pregunta":"De estas cinco palabras, una pertenece a una clase diferente ¿Cuál  es?",
-          "opciones":["Cuchara","Plato","Tenedor","Cuchillo","Cucharita"],
-          "respuesta":["Plato"]
+          "id": 22,
+          "pregunta": "Lo contrario de calor es:",
+          "opciones": [
+               "Sudor",
+               "Fatiga",
+               "Blanco",
+               "Frío",
+               "Luz"
+          ],
+          "respuesta": [
+               "Frío"
+          ],
+          "tipo": 1
      },
      {
-          "id":24,
-          "pregunta":"Para coser se emplea la aguja, y para dibujar se emplea  el:",
-          "opciones":["Lápiz","Bastón","Tintero","Pie","Ojo"],
-          "respuesta":["Lápiz"]
+          "id": 23,
+          "pregunta": "De estas cinco palabras, una pertenece a una clase diferente ¿Cuál  es?",
+          "opciones": [
+               "Cuchara",
+               "Plato",
+               "Tenedor",
+               "Cuchillo",
+               "Cucharita"
+          ],
+          "respuesta": [
+               "Plato"
+          ],
+          "tipo": 1
      },
      {
-          "id":25,
-          "pregunta":"Escriba los números que faltan a esta serie:",
-          "opciones":["40","36","32","28","x","20","16","12","x","4"],
-          "respuesta":["24","8"]
+          "id": 24,
+          "pregunta": "Para coser se emplea la aguja, y para dibujar se emplea  el:",
+          "opciones": [
+               "Lápiz",
+               "Bastón",
+               "Tintero",
+               "Pie",
+               "Ojo"
+          ],
+          "respuesta": [
+               "Lápiz"
+          ],
+          "tipo": 1
      },
      {
-          "id":26,
-          "pregunta":"La cordillera de los Andes está en:",
-          "opciones":["Europa","Asia","América","Austria","África"],
-          "respuesta":["América"]
+          "id": 25,
+          "pregunta": "Escriba los números que faltan a esta serie:",
+          "opciones": [
+               "40",
+               "36",
+               "32",
+               "28",
+               "x",
+               "20",
+               "16",
+               "12",
+               "x",
+               "4"
+          ],
+          "respuesta": [
+               "24",
+               "8"
+          ],
+          "tipo": 2
      },
      {
-          "id":27,
-          "pregunta":"Lo contrario de arriba es:",
-          "opciones":["Dentro","Abajo","Cerca","Completo","Lejos"],
-          "respuesta":["Abajo"]
+          "id": 26,
+          "pregunta": "La cordillera de los Andes está en:",
+          "opciones": [
+               "Europa",
+               "Asia",
+               "América",
+               "Austria",
+               "África"
+          ],
+          "respuesta": [
+               "América"
+          ],
+          "tipo": 1
      },
      {
-          "id":28,
-          "pregunta":"De estas cinco palabras, una pertenece a una clase diferente ¿Cuál  es?",
-          "opciones":["General","Teniente","Capitán","Presidente","Coronel"],
-          "respuesta":["Presidente"]
+          "id": 27,
+          "pregunta": "Lo contrario de arriba es:",
+          "opciones": [
+               "Dentro",
+               "Abajo",
+               "Cerca",
+               "Completo",
+               "Lejos"
+          ],
+          "respuesta": [
+               "Abajo"
+          ],
+          "tipo": 1
      },
      {
-          "id":29,
-          "pregunta":"Con el cuero se fabrica el calzado, y con la tela:",
-          "opciones":["Piel","Lana","Algodón","Seda","Vestidos"],
-          "respuesta":["Vestidos"]
+          "id": 28,
+          "pregunta": "De estas cinco palabras, una pertenece a una clase diferente ¿Cuál  es?",
+          "opciones": [
+               "General",
+               "Teniente",
+               "Capitán",
+               "Presidente",
+               "Coronel"
+          ],
+          "respuesta": [
+               "Presidente"
+          ],
+          "tipo": 1
      },
      {
-          "id":30,
-          "pregunta":"Escriba los dos números que faltan a esta serie:",
-          "opciones":["64","58","52","46","x","34","28","x","16","10","4"],
-          "respuesta":["40","22"]
+          "id": 29,
+          "pregunta": "Con el cuero se fabrica el calzado, y con la tela:",
+          "opciones": [
+               "Piel",
+               "Lana",
+               "Algodón",
+               "Seda",
+               "Vestidos"
+          ],
+          "respuesta": [
+               "Vestidos"
+          ],
+          "tipo": 1
      },
      {
-          "id":31,
-          "pregunta":"Roma es la Capital de: ",
-          "opciones":["Nicaragua", "España", "Grecia", "Italia", "Paraguay"],
-          "respuesta":["Italia"]
+          "id": 30,
+          "pregunta": "Escriba los dos números que faltan a esta serie:",
+          "opciones": [
+               "64",
+               "58",
+               "52",
+               "46",
+               "x",
+               "34",
+               "28",
+               "x",
+               "16",
+               "10",
+               "4"
+          ],
+          "respuesta": [
+               "40",
+               "22"
+          ],
+          "tipo": 2
      },
      {
-          "id":32,
-          "pregunta":"Lo contrario de si es: ",
-          "opciones":["Antes","Afirmar","Duda","Luego","No"],
-          "respuesta":["No"]
+          "id": 31,
+          "pregunta": "Roma es la Capital de: ",
+          "opciones": [
+               "Nicaragua",
+               "España",
+               "Grecia",
+               "Italia",
+               "Paraguay"
+          ],
+          "respuesta": [
+               "Italia"
+          ],
+          "tipo": 1
      },
      {
-          "id":33,
-          "pregunta":"De estas cinco palabras, una pertenece a una clase diferente ¿Cuál  es?",
-          "opciones":["Vaso","Copa","Agua","Jarra","Taza"],
-          "respuesta":["Agua"]
+          "id": 32,
+          "pregunta": "Lo contrario de si es: ",
+          "opciones": [
+               "Antes",
+               "Afirmar",
+               "Duda",
+               "Luego",
+               "No"
+          ],
+          "respuesta": [
+               "No"
+          ],
+          "tipo": 1
      },
      {
-          "id":34,
-          "pregunta":"La Nariz sirve para oler, y los ojos sirven para:",
-          "opciones":["Oir","Ver","Gustar","Tocar","Andar"],
-          "respuesta":["Ver"]
+          "id": 33,
+          "pregunta": "De estas cinco palabras, una pertenece a una clase diferente ¿Cuál  es?",
+          "opciones": [
+               "Vaso",
+               "Copa",
+               "Agua",
+               "Jarra",
+               "Taza"
+          ],
+          "respuesta": [
+               "Agua"
+          ],
+          "tipo": 1
      },
      {
-          "id":35,
-          "pregunta":"Escriba los dos números que faltan a esta serie:",
-          "opciones":["5","10","20","x","80","160","x","640","1280"],
-          "respuesta":["40","320"]
+          "id": 34,
+          "pregunta": "La Nariz sirve para oler, y los ojos sirven para:",
+          "opciones": [
+               "Oir",
+               "Ver",
+               "Gustar",
+               "Tocar",
+               "Andar"
+          ],
+          "respuesta": [
+               "Ver"
+          ],
+          "tipo": 1
      },
      {
-          "id":36,
-          "pregunta":"El idioma oficial de Haití es el:",
-          "opciones":["Ingles","Frances","Español","Holandés","Portugués"],
-          "respuesta":["Frances"]
+          "id": 35,
+          "pregunta": "Escriba los dos números que faltan a esta serie:",
+          "opciones": [
+               "5",
+               "10",
+               "20",
+               "x",
+               "80",
+               "160",
+               "x",
+               "640",
+               "1280"
+          ],
+          "respuesta": [
+               "40",
+               "320"
+          ],
+          "tipo": 2
      },
      {
-          "id":37,
-          "pregunta":"Lo contrario de despacio es :",
-          "opciones":["De prisa","Lento","Pausado","Debil","Grueso"],
-          "respuesta":["De prisa"]
+          "id": 36,
+          "pregunta": "El idioma oficial de Haití es el:",
+          "opciones": [
+               "Ingles",
+               "Frances",
+               "Español",
+               "Holandés",
+               "Portugués"
+          ],
+          "respuesta": [
+               "Frances"
+          ],
+          "tipo": 1
      },
      {
-          "id":38,
-          "pregunta":"De estas cinco palabras una pertenece a una clase diferente ¿Cuál  es?",
-          "opciones":["Carpintero","Herrero","Médico","Albañil","Zapatero"],
-          "respuesta":["Médico"]
+          "id": 37,
+          "pregunta": "Lo contrario de despacio es :",
+          "opciones": [
+               "De prisa",
+               "Lento",
+               "Pausado",
+               "Debil",
+               "Grueso"
+          ],
+          "respuesta": [
+               "De prisa"
+          ],
+          "tipo": 1
      },
      {
-          "id":39,
-          "pregunta":"Al lunes sigue el martes, y a enero sigue:",
-          "opciones":["Junio","Viernes","Mes","Febrero","Año"],
-          "respuesta":["Febrero"]
+          "id": 38,
+          "pregunta": "De estas cinco palabras una pertenece a una clase diferente ¿Cuál  es?",
+          "opciones": [
+               "Carpintero",
+               "Herrero",
+               "Médico",
+               "Albañil",
+               "Zapatero"
+          ],
+          "respuesta": [
+               "Médico"
+          ],
+          "tipo": 1
      },
      {
-          "id":40,
-          "pregunta":"Escriba los dos números que faltan a esta serie:",
-          "opciones":["2","4","x","16","22","32","x","128","256"],
-          "respuesta":["8","64"]
+          "id": 39,
+          "pregunta": "Al lunes sigue el martes, y a enero sigue:",
+          "opciones": [
+               "Junio",
+               "Viernes",
+               "Mes",
+               "Febrero",
+               "Año"
+          ],
+          "respuesta": [
+               "Febrero"
+          ],
+          "tipo": 1
      },
      {
-          "id":41,
-          "pregunta":"Fernando Magallanes fue un famoso:",
-          "opciones":["Militar","Aviador","Navegante","Sabio","Sacerdote"],
-          "respuesta":["Navegante"]
+          "id": 40,
+          "pregunta": "Escriba los dos números que faltan a esta serie:",
+          "opciones": [
+               "2",
+               "4",
+               "x",
+               "16",
+               "22",
+               "32",
+               "x",
+               "128",
+               "256"
+          ],
+          "respuesta": [
+               "8",
+               "64"
+          ],
+          "tipo": 2
      },
      {
-          "id":42,
-          "pregunta":"Lo contrario de blando es:",
-          "opciones":["Suave","Duro","Liso","Grueso","Débil"],
-          "respuesta":["Duro"]
+          "id": 41,
+          "pregunta": "Fernando Magallanes fue un famoso:",
+          "opciones": [
+               "Militar",
+               "Aviador",
+               "Navegante",
+               "Sabio",
+               "Sacerdote"
+          ],
+          "respuesta": [
+               "Navegante"
+          ],
+          "tipo": 1
      },
      {
-          "id":43,
-          "pregunta":"De estas cinco palabras una pertenece a una clase diferente ¿Cuál  es?",
-          "opciones":["Ver","Oir","Oler","Andar","Gustar"],
-          "respuesta":["Andar"]
+          "id": 42,
+          "pregunta": "Lo contrario de blando es:",
+          "opciones": [
+               "Suave",
+               "Duro",
+               "Liso",
+               "Grueso",
+               "Débil"
+          ],
+          "respuesta": [
+               "Duro"
+          ],
+          "tipo": 1
      },
      {
-          "id":44,
-          "pregunta":"El codo articula el brazo, y la rodilla articula:",
-          "opciones":["El corazón","Los dedos","Los pulmones","El cerebro","La pierna"],
-          "respuesta":["La pierna"]
+          "id": 43,
+          "pregunta": "De estas cinco palabras una pertenece a una clase diferente ¿Cuál  es?",
+          "opciones": [
+               "Ver",
+               "Oir",
+               "Oler",
+               "Andar",
+               "Gustar"
+          ],
+          "respuesta": [
+               "Andar"
+          ],
+          "tipo": 1
      },
      {
-          "id":45,
-          "pregunta":"Escriba los dos números que faltan a esta serie:",
-          "opciones":["5","6","8","11","15","20","x","33","41","x","60"],
-          "respuesta":["26","50"]
+          "id": 44,
+          "pregunta": "El codo articula el brazo, y la rodilla articula:",
+          "opciones": [
+               "El corazón",
+               "Los dedos",
+               "Los pulmones",
+               "El cerebro",
+               "La pierna"
+          ],
+          "respuesta": [
+               "La pierna"
+          ],
+          "tipo": 1
      },
      {
-          "id":46,
-          "pregunta":"Cristóbal Colón descubrió América en el:",
-          "opciones":["Siglo XIII","Siglo XVII","Siglo IV","Siglo XV","Siglo XIV"],
-          "respuesta":["Siglo XV"]
+          "id": 45,
+          "pregunta": "Escriba los dos números que faltan a esta serie:",
+          "opciones": [
+               "5",
+               "6",
+               "8",
+               "11",
+               "15",
+               "20",
+               "x",
+               "33",
+               "41",
+               "x",
+               "60"
+          ],
+          "respuesta": [
+               "26",
+               "50"
+          ],
+          "tipo": 2
      },
      {
-          "id":47,
-          "pregunta":"Lo contrario de fuera es: ",
-          "opciones":["Libre","Lejos","Distinto","Malo","Dentro"],
-          "respuesta":["Dentro"]
+          "id": 46,
+          "pregunta": "Cristóbal Colón descubrió América en el:",
+          "opciones": [
+               "Siglo XIII",
+               "Siglo XVII",
+               "Siglo IV",
+               "Siglo XV",
+               "Siglo XIV"
+          ],
+          "respuesta": [
+               "Siglo XV"
+          ],
+          "tipo": 1
      },
      {
-          "id":48,
-          "pregunta":"De estas cinco palabras una pertenece a una clase diferente ¿Cuál  es?",
-          "opciones":["Venus", "Jupiter","Satélite","Urano","Neptuno"],
-          "respuesta":["Satélite"]
+          "id": 47,
+          "pregunta": "Lo contrario de fuera es: ",
+          "opciones": [
+               "Libre",
+               "Lejos",
+               "Distinto",
+               "Malo",
+               "Dentro"
+          ],
+          "respuesta": [
+               "Dentro"
+          ],
+          "tipo": 1
      },
      {
-          "id":49,
-          "pregunta":"Octubre es anterior a Noviembre y Jueves es anterior  a:",
-          "opciones":["Diciembre","Viernes","Septiembre","Miércoles","Día"],
-          "respuesta":["Viernes"]
+          "id": 48,
+          "pregunta": "De estas cinco palabras una pertenece a una clase diferente ¿Cuál  es?",
+          "opciones": [
+               "Venus",
+               "Jupiter",
+               "Satélite",
+               "Urano",
+               "Neptuno"
+          ],
+          "respuesta": [
+               "Satélite"
+          ],
+          "tipo": 1
      },
      {
-          "id":50,
-          "pregunta":"Escriba los dos números que faltan a esta serie:",
-          "opciones":["90","80","71","63","x","50","45","x","38","36","35"],
-          "respuesta":["56","41"]
+          "id": 49,
+          "pregunta": "Octubre es anterior a Noviembre y Jueves es anterior  a:",
+          "opciones": [
+               "Diciembre",
+               "Viernes",
+               "Septiembre",
+               "Miércoles",
+               "Día"
+          ],
+          "respuesta": [
+               "Viernes"
+          ],
+          "tipo": 1
      },
      {
-          "id":51,
-          "pregunta":"Los primeros ferrocarriles empezaron a funcionar  hacia:",
-          "opciones":["1900","1800","1825","1750","1710"],
-          "respuesta":["1825"]
+          "id": 50,
+          "pregunta": "Escriba los dos números que faltan a esta serie:",
+          "opciones": [
+               "90",
+               "80",
+               "71",
+               "63",
+               "x",
+               "50",
+               "45",
+               "x",
+               "38",
+               "36",
+               "35"
+          ],
+          "respuesta": [
+               "56",
+               "41"
+          ],
+          "tipo": 2
      },
      {
-          "id":52,
-          "pregunta":"Lo contrario de empezar es:",
-          "opciones":["Iniciar","Adelantar","Obstruir","Terminar","Buscar"],
-          "respuesta":["Terminar"]
+          "id": 51,
+          "pregunta": "Los primeros ferrocarriles empezaron a funcionar  hacia:",
+          "opciones": [
+               "1900",
+               "1800",
+               "1825",
+               "1750",
+               "1710"
+          ],
+          "respuesta": [
+               "1825"
+          ],
+          "tipo": 1
      },
      {
-          "id":53,
-          "pregunta":"De estas cinco palabras una pertenece a una clase diferente ¿Cuál  es? ",
-          "opciones":["Feliz","Triste","Satisfecho","Alegre","Contento"],
-          "respuesta":["Triste"]
+          "id": 52,
+          "pregunta": "Lo contrario de empezar es:",
+          "opciones": [
+               "Iniciar",
+               "Adelantar",
+               "Obstruir",
+               "Terminar",
+               "Buscar"
+          ],
+          "respuesta": [
+               "Terminar"
+          ],
+          "tipo": 1
      },
      {
-          "id":54,
-          "pregunta":"La paz viene después de la guerra y la calma viene después  de:",
-          "opciones":["La tormenta","El crepúsculo","El bienestar","La felicidad","El ocaso"],
-          "respuesta":["La tormenta"]
+          "id": 53,
+          "pregunta": "De estas cinco palabras una pertenece a una clase diferente ¿Cuál  es? ",
+          "opciones": [
+               "Feliz",
+               "Triste",
+               "Satisfecho",
+               "Alegre",
+               "Contento"
+          ],
+          "respuesta": [
+               "Triste"
+          ],
+          "tipo": 1
      },
      {
-          "id":55,
-          "pregunta":"Escriba los dos números que faltan a esta serie: ",
-          "opciones":["120","100","82","66","x","40","30","x","15","12","10"],
-          "respuesta":["52","22"]
+          "id": 54,
+          "pregunta": "La paz viene después de la guerra y la calma viene después  de:",
+          "opciones": [
+               "La tormenta",
+               "El crepúsculo",
+               "El bienestar",
+               "La felicidad",
+               "El ocaso"
+          ],
+          "respuesta": [
+               "La tormenta"
+          ],
+          "tipo": 1
      },
      {
-          "id":56,
-          "pregunta":"La bitácora es de uso indispensable en:",
-          "opciones":["Música","Biología","Navegación","Teatro","Química"],
-          "respuesta":["Navegación"]
+          "id": 55,
+          "pregunta": "Escriba los dos números que faltan a esta serie: ",
+          "opciones": [
+               "120",
+               "100",
+               "82",
+               "66",
+               "x",
+               "40",
+               "30",
+               "x",
+               "15",
+               "12",
+               "10"
+          ],
+          "respuesta": [
+               "52",
+               "22"
+          ],
+          "tipo": 2
      },
      {
-          "id":57,
-          "pregunta":"Lo contrario de homogéneo es:",
-          "opciones":["Compacto","Heterogéneo","Abstracto","Sútil","Neutro"],
-          "respuesta":["Heterogéneo"]
+          "id": 56,
+          "pregunta": "La bitácora es de uso indispensable en:",
+          "opciones": [
+               "Música",
+               "Biología",
+               "Navegación",
+               "Teatro",
+               "Química"
+          ],
+          "respuesta": [
+               "Navegación"
+          ],
+          "tipo": 1
      },
      {
-          "id":58,
-          "pregunta":"De estas cinco palabras una pertenece a una clase diferente ¿Cuál  es?",
-          "opciones":["Stravinski","Bach","Mozart","Newton","Chopin"],
-          "respuesta":["Newton"]
+          "id": 57,
+          "pregunta": "Lo contrario de homogéneo es:",
+          "opciones": [
+               "Compacto",
+               "Heterogéneo",
+               "Abstracto",
+               "Sútil",
+               "Neutro"
+          ],
+          "respuesta": [
+               "Heterogéneo"
+          ],
+          "tipo": 1
      },
      {
-          "id":59,
-          "pregunta":"La biblioteca es para guardar libros y la pinacoteca para  guardar:",
-          "opciones":["Periódico","Discos","Películas","Monedas","Cuadros"],
-          "respuesta":["Cuadros"]
+          "id": 58,
+          "pregunta": "De estas cinco palabras una pertenece a una clase diferente ¿Cuál  es?",
+          "opciones": [
+               "Stravinski",
+               "Bach",
+               "Mozart",
+               "Newton",
+               "Chopin"
+          ],
+          "respuesta": [
+               "Newton"
+          ],
+          "tipo": 1
      },
      {
-          "id":60,
-          "pregunta":"Escriba los números que faltan a esta serie: ",
-          "opciones":["6561","2187","729","x","81","x","9","3"],
-          "respuesta":["243","27"]
+          "id": 59,
+          "pregunta": "La biblioteca es para guardar libros y la pinacoteca para  guardar:",
+          "opciones": [
+               "Periódico",
+               "Discos",
+               "Películas",
+               "Monedas",
+               "Cuadros"
+          ],
+          "respuesta": [
+               "Cuadros"
+          ],
+          "tipo": 1
+     },
+     {
+          "id": 60,
+          "pregunta": "Escriba los números que faltan a esta serie: ",
+          "opciones": [
+               "6561",
+               "2187",
+               "729",
+               "x",
+               "81",
+               "x",
+               "9",
+               "3"
+          ],
+          "respuesta": [
+               "243",
+               "27"
+          ],
+          "tipo": 2
      }
-
 ]
