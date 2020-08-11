@@ -358,6 +358,6 @@
           "pregunta":"Escriba los números que faltan a esta serie: ",
           "opciones":["6561","2187","729","x","81","x","9","3"],
           "respuesta":["243","27"]
-     };
+     }
 
 ]
