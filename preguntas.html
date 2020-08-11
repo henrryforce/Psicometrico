@@ -6,7 +6,11 @@
     <title>Test psicometrico.</title>		
 		<link rel="stylesheet" href="css/bootstrap.min.css" >
 		<link rel="stylesheet" href="css/bootstrap-theme.min.css" >
-		<link rel="stylesheet" href="css/inicio.css" >
+        <link rel="stylesheet" href="css/inicio.css" >
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" type="text/javascript"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.3/js/bootstrap.min.js" type="text/javascript"></script>
+        <link href="http://cdn.rawgit.com/davidstutz/bootstrap-multiselect/master/dist/css/bootstrap-multiselect.css" rel="stylesheet" type="text/css" />
+        <script src="http://cdn.rawgit.com/davidstutz/bootstrap-multiselect/master/dist/js/bootstrap-multiselect.js" type="text/javascript"></script>
 		<script src="js/bootstrap.min.js" ></script>
     <title>Document</title>
 </head>
@@ -26,9 +30,20 @@
                     </div>
                     <br><br>
                     <div id="pregunta2">
-                        <article id="2"> 
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus ipsa itaque laboriosam sed quod praesentium maxime eos, sint dolore delectus adipisci sit mollitia magnam blanditiis facere, nihil veritatis quibusdam eius.
-                        </article>
+                        <table>
+                            <tr>
+                                <td><b>Opciones: </b><b> </b></td>
+                                <td>
+                                    <select name="Question" id="seleccion">
+                                        <option value="1">Respuesta1</option>
+                                        <option value="2">Respuesta2</option>
+                                        <option value="3">Respuesta3</option>
+                                        <option value="4">Respuesta4</option>
+                                        <option value="5">Respuesta5</option>
+                                    </select>
+                                </td>
+                            </tr>
+                        </table>
                     </div>
                     <br><br>
                     <div id="pregunta3">
@@ -48,11 +63,33 @@
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus ipsa itaque laboriosam sed quod praesentium maxime eos, sint dolore delectus adipisci sit mollitia magnam blanditiis facere, nihil veritatis quibusdam eius.
                         </article>
                     </div>
-
+                    <div style="margin-top:2px" class="form-group" >
+                        <div class="col-sm-12 controls" align="center">
+                            <button id="btn-back" type="button" class="btn btn-success" >Anterior</a>                            
+                            <button id="btn-next" type="button" class="btn btn-success" >Siguiente</a>                        
+                        </div>                                                
+                    </div>
                 </form>
             </div>
         </div>
     </div>
     <script src="inicio.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('#seleccion').multiselect({
+                includeSelectAllOption: true
+            });
+        });
+    </script>
+    <script>
+        $('#btnSave').click(function () {
+            var country = $("#seleccion option:selected");
+            var message = "";
+            country.each( function () {
+                message += $( this).val() + " " + $(this).text() + "\n";
+            });
+            alert(message);
+        });
+    </script>
 </body>
 </html>

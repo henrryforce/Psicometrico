@@ -72,3 +72,9 @@ ul{
 .select-css option[selected] {
     background-color: orange;
 }
+.form-horizontal{
+    padding: 1.4em;
+}
+button{
+    margin: 50px;
+}
