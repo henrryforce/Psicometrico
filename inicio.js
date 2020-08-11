@@ -27,16 +27,21 @@ btn.addEventListener('submit',function(e){
           `
           setTimeout(function(){ 
           document.querySelector('#mensajes div').remove(); 
-          enviardatos();
+          let dato=[];
+     dato.push(nom);
+     dato.push(matricula);
+     dato.push(seCarrera);
+     dato.push(grado);
+          enviardatos(dato);
+          location.href='preguntas.html';
      }, 1500);
      }
      
 });
-function enviardatos(){
-     console.log(nom);
-     console.log(matricula);
-     console.log(seCarrera);
-     console.log(grado);
+function enviardatos(datos){
+     
+     localStorage.setItem('datosP',JSON.stringify(datos));
+
 }
 
 
