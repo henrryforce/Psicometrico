@@ -178,6 +178,186 @@
           "pregunta":"Escriba los dos números que faltan a esta serie:",
           "opciones":["64","58","52","46","x","34","28","x","16","10","4"],
           "respuesta":["40","22"]
-     }
+     },
+     {
+          "id":31,
+          "pregunta":"Roma es la Capital de: ",
+          "opciones":["Nicaragua", "España", "Grecia", "Italia", "Paraguay"],
+          "respuesta":["Italia"]
+     },
+     {
+          "id":32,
+          "pregunta":"Lo contrario de si es: ",
+          "opciones":["Antes","Afirmar","Duda","Luego","No"],
+          "respuesta":["No"]
+     },
+     {
+          "id":33,
+          "pregunta":"De estas cinco palabras, una pertenece a una clase diferente ¿Cuál  es?",
+          "opciones":["Vaso","Copa","Agua","Jarra","Taza"],
+          "respuesta":["Agua"]
+     },
+     {
+          "id":34,
+          "pregunta":"La Nariz sirve para oler, y los ojos sirven para:",
+          "opciones":["Oir","Ver","Gustar","Tocar","Andar"],
+          "respuesta":["Ver"]
+     },
+     {
+          "id":35,
+          "pregunta":"Escriba los dos números que faltan a esta serie:",
+          "opciones":["5","10","20","x","80","160","x","640","1280"],
+          "respuesta":["40","320"]
+     },
+     {
+          "id":36,
+          "pregunta":"El idioma oficial de Haití es el:",
+          "opciones":["Ingles","Frances","Español","Holandés","Portugués"],
+          "respuesta":["Frances"]
+     },
+     {
+          "id":37,
+          "pregunta":"Lo contrario de despacio es :",
+          "opciones":["De prisa","Lento","Pausado","Debil","Grueso"],
+          "respuesta":["De prisa"]
+     },
+     {
+          "id":38,
+          "pregunta":"De estas cinco palabras una pertenece a una clase diferente ¿Cuál  es?",
+          "opciones":["Carpintero","Herrero","Médico","Albañil","Zapatero"],
+          "respuesta":["Médico"]
+     },
+     {
+          "id":39,
+          "pregunta":"Al lunes sigue el martes, y a enero sigue:",
+          "opciones":["Junio","Viernes","Mes","Febrero","Año"],
+          "respuesta":["Febrero"]
+     },
+     {
+          "id":40,
+          "pregunta":"Escriba los dos números que faltan a esta serie:",
+          "opciones":["2","4","x","16","22","32","x","128","256"],
+          "respuesta":["8","64"]
+     },
+     {
+          "id":41,
+          "pregunta":"Fernando Magallanes fue un famoso:",
+          "opciones":["Militar","Aviador","Navegante","Sabio","Sacerdote"],
+          "respuesta":["Navegante"]
+     },
+     {
+          "id":42,
+          "pregunta":"Lo contrario de blando es:",
+          "opciones":["Suave","Duro","Liso","Grueso","Débil"],
+          "respuesta":["Duro"]
+     },
+     {
+          "id":43,
+          "pregunta":"De estas cinco palabras una pertenece a una clase diferente ¿Cuál  es?",
+          "opciones":["Ver","Oir","Oler","Andar","Gustar"],
+          "respuesta":["Andar"]
+     },
+     {
+          "id":44,
+          "pregunta":"El codo articula el brazo, y la rodilla articula:",
+          "opciones":["El corazón","Los dedos","Los pulmones","El cerebro","La pierna"],
+          "respuesta":["La pierna"]
+     },
+     {
+          "id":45,
+          "pregunta":"Escriba los dos números que faltan a esta serie:",
+          "opciones":["5","6","8","11","15","20","x","33","41","x","60"],
+          "respuesta":["26","50"]
+     },
+     {
+          "id":46,
+          "pregunta":"Cristóbal Colón descubrió América en el:",
+          "opciones":["Siglo XIII","Siglo XVII","Siglo IV","Siglo XV","Siglo XIV"],
+          "respuesta":["Siglo XV"]
+     },
+     {
+          "id":47,
+          "pregunta":"Lo contrario de fuera es: ",
+          "opciones":["Libre","Lejos","Distinto","Malo","Dentro"],
+          "respuesta":["Dentro"]
+     },
+     {
+          "id":48,
+          "pregunta":"De estas cinco palabras una pertenece a una clase diferente ¿Cuál  es?",
+          "opciones":["Venus", "Jupiter","Satélite","Urano","Neptuno"],
+          "respuesta":["Satélite"]
+     },
+     {
+          "id":49,
+          "pregunta":"Octubre es anterior a Noviembre y Jueves es anterior  a:",
+          "opciones":["Diciembre","Viernes","Septiembre","Miércoles","Día"],
+          "respuesta":["Viernes"]
+     },
+     {
+          "id":50,
+          "pregunta":"Escriba los dos números que faltan a esta serie:",
+          "opciones":["90","80","71","63","x","50","45","x","38","36","35"],
+          "respuesta":["56","41"]
+     },
+     {
+          "id":51,
+          "pregunta":"Los primeros ferrocarriles empezaron a funcionar  hacia:",
+          "opciones":["1900","1800","1825","1750","1710"],
+          "respuesta":["1825"]
+     },
+     {
+          "id":52,
+          "pregunta":"Lo contrario de empezar es:",
+          "opciones":["Iniciar","Adelantar","Obstruir","Terminar","Buscar"],
+          "respuesta":["Terminar"]
+     },
+     {
+          "id":53,
+          "pregunta":"De estas cinco palabras una pertenece a una clase diferente ¿Cuál  es? ",
+          "opciones":["Feliz","Triste","Satisfecho","Alegre","Contento"],
+          "respuesta":["Triste"]
+     },
+     {
+          "id":54,
+          "pregunta":"La paz viene después de la guerra y la calma viene después  de:",
+          "opciones":["La tormenta","El crepúsculo","El bienestar","La felicidad","El ocaso"],
+          "respuesta":["La tormenta"]
+     },
+     {
+          "id":55,
+          "pregunta":"Escriba los dos números que faltan a esta serie: ",
+          "opciones":["120","100","82","66","x","40","30","x","15","12","10"],
+          "respuesta":["52","22"]
+     },
+     {
+          "id":56,
+          "pregunta":"La bitácora es de uso indispensable en:",
+          "opciones":["Música","Biología","Navegación","Teatro","Química"],
+          "respuesta":["Navegación"]
+     },
+     {
+          "id":57,
+          "pregunta":"Lo contrario de homogéneo es:",
+          "opciones":["Compacto","Heterogéneo","Abstracto","Sútil","Neutro"],
+          "respuesta":["Heterogéneo"]
+     },
+     {
+          "id":58,
+          "pregunta":"De estas cinco palabras una pertenece a una clase diferente ¿Cuál  es?",
+          "opciones":["Stravinski","Bach","Mozart","Newton","Chopin"],
+          "respuesta":["Newton"]
+     },
+     {
+          "id":59,
+          "pregunta":"La biblioteca es para guardar libros y la pinacoteca para  guardar:",
+          "opciones":["Periódico","Discos","Películas","Monedas","Cuadros"],
+          "respuesta":["Cuadros"]
+     },
+     {
+          "id":60,
+          "pregunta":"Escriba los números que faltan a esta serie: ",
+          "opciones":["6561","2187","729","x","81","x","9","3"],
+          "respuesta":["243","27"]
+     };
 
 ]
