@@ -101,7 +101,7 @@ function generaPregTip1(i){
      
                                 <span class="input-group-text" id="">Primer valor y segundo valor</span>
                             
-                            <input type="text" class="form-control">
+                            <input type="text"  class="form-control">
                             <input type="text" class="form-control">
      `;
      ar.appendChild(input);
