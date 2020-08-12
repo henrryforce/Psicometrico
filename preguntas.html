@@ -30,25 +30,22 @@
                     </div>
                     <br><br>
                     <div id="pregunta2">
-                        <table>
-                            <tr>
-                                <td><b>Opciones: </b><b> </b></td>
-                                <td>
-                                    <select name="Question" id="seleccion">
-                                        <option value="1">Respuesta1</option>
-                                        <option value="2">Respuesta2</option>
-                                        <option value="3">Respuesta3</option>
-                                        <option value="4">Respuesta4</option>
-                                        <option value="5">Respuesta5</option>
-                                    </select>
-                                </td>
-                            </tr>
-                        </table>
+                        <select class="custom-select">
+                            <option selected>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
                     </div>
                     <br><br>
                     <div id="pregunta3">
                         <article id="3"> 
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus ipsa itaque laboriosam sed quod praesentium maxime eos, sint dolore delectus adipisci sit mollitia magnam blanditiis facere, nihil veritatis quibusdam eius.
+                            Termine la susesión numerica: 2 4 6 __ 16 __ 20.                            
+                            <input type="text"name="res3">
+                            <div class="tooltip">Hover over me
+                                <span class="tooltiptext">Tooltip text</span>
+                              </div>
+                            
                         </article>
                     </div>
                     <br><br>
@@ -73,23 +70,5 @@
             </div>
         </div>
     </div>
-    <script src="inicio.js"></script>
-    <script type="text/javascript">
-        $(function () {
-            $('#seleccion').multiselect({
-                includeSelectAllOption: true
-            });
-        });
-    </script>
-    <script>
-        $('#btnSave').click(function () {
-            var country = $("#seleccion option:selected");
-            var message = "";
-            country.each( function () {
-                message += $( this).val() + " " + $(this).text() + "\n";
-            });
-            alert(message);
-        });
-    </script>
 </body>
 </html>
