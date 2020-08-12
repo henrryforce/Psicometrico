@@ -95,6 +95,16 @@ function generaPregTip1(i){
           serie += preguntas[i]['opciones'][j] + ' ';
      }
      ar.innerText=`${preguntas[i]['pregunta']} ${serie}`;
+     var input = document.createElement('div');
+     input.setAttribute("class",'input-group-prepend');
+     input.innerHTML=`
+     
+                                <span class="input-group-text" id="">Primer valor y segundo valor</span>
+                            
+                            <input type="text" class="form-control">
+                            <input type="text" class="form-control">
+     `;
+     ar.appendChild(input);
    
      preg1.appendChild(ar);        
    }
