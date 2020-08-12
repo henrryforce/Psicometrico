@@ -51,6 +51,6 @@ function generaPregTip1(i){
    function generaPregtip2(i){
      var ar = document.createElement('article');
      ar.setAttribute("id",preguntas[i]['id']);
-     ar.innerText = "Funciona";
+     ar.innerText=preguntas[i]['pregunta'];
      preg1.appendChild(ar);        
    }
