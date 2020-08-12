@@ -1,4 +1,5 @@
-let contpreg=4;
+let contpreg=5;
+let preguntas=[];
 const preg1 = document.getElementById('preguntas');
 document.addEventListener("DOMContentLoaded", ready);
 function ready() {
@@ -6,37 +7,24 @@ function ready() {
      xhr.open('GET', 'preguntas.json', true);
      xhr.onload = function () {
           if (this.status === 200) {
-               const preguntas = JSON.parse(this.responseText);
-               if (preguntas[0]['tipo'] === 1) {
-                  /*  
-                    preg1.innerHTML = `
-                    <article id="${preguntas[0]['id']}">
-                    <p>${preguntas[0]['pregunta']}</p>
-                    <table>
-                    <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                    <label class="input-group-text" for="inputGroupSelect01">Options</label>
-                    </div>
-                    <select class="custom-select" id="inputGroupSelect01">
-                    <option value="1">${preguntas[0]['opciones'][0]}</option>
-                    <option value="2">${preguntas[0]['opciones'][1]}</option>
-                    <option value="3">${preguntas[0]['opciones'][2]}</option>
-                    <option value="4">${preguntas[0]['opciones'][3]}</option>
-                    <option value="5">${preguntas[0]['opciones'][4]}</option>
-                    </select>
-                    </div>            
-                        </table>
-                    </article> 
-                    `;*/
-                    generaPregTip1(preguntas);
-
-               }
+              
+                preguntas = JSON.parse(this.responseText);
+                crea5preguntas();
           }
      }
      xhr.send()
 }
-function generaPregTip1(preguntas){
-   for(var i=0;i<contpreg;i++){
+function crea5preguntas(){
+     for(var i=0;i<contpreg;i++){  
+     if (preguntas[i]['tipo'] === 1) {
+          
+          generaPregTip1(i);
+     }else{
+          generaPregtip2(i);
+     }
+}
+}
+function generaPregTip1(i){
         
         var ar = document.createElement('article');
         ar.setAttribute("id",preguntas[i]['id']);
@@ -57,8 +45,19 @@ function generaPregTip1(preguntas){
         </div>            
             </table>
         `;
-
-       preg1.appendChild(ar);
-        
-   }
+       preg1.appendChild(ar);        
+   
 }
+   function generaPregtip2(i){
+     var ar = document.createElement('article');
+     ar.setAttribute("id",preguntas[i]['id']);
+     
+     var serie='';
+     for(var j=0;j<preguntas[i]['opciones'].length;j++){
+          serie += preguntas[i]['opciones'][j] + ' ';
+     console.log(serie);
+     }
+     ar.innerText=`${preguntas[i]['pregunta']} ${serie}`;
+   
+     preg1.appendChild(ar);        
+   }
