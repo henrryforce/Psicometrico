@@ -19,37 +19,7 @@ function ready() {
      }
      xhr.send()
 }
-/*
-btnnext.addEventListener("click",function(){
 
-     cpc = contpreg;
-     contpreg +=5;
-     preg1.innerHTML=``;
-     const xhr = new XMLHttpRequest();
-     xhr.open('GET', 'preguntas.json', true);
-     xhr.onload = function () {
-          if (this.status === 200) {    
-                preguntas = JSON.parse(this.responseText);       
-                    crea5preguntas(cpc,contpreg);
-                    
-
-          }
-     }
-     xhr.send()
-     
-});
-function crea5any(p,pf){
-     var i = pre;
-     var x = pref;
-     for(i=0;i<pref;i++){  
-     if (preguntas[i]['tipo'] === 1) {
-          
-          generaPregTip1(i);
-     }else{
-          generaPregtip2(i);
-     }
-}
-*/
 function crea5preguntas(){
 
      for(i=0;i<60;i++){  
