@@ -1,6 +1,4 @@
-let contpreg=5;
-let cpc=0;
-let cliknex=0;
+
 let preguntas=[];
 const btnnext = document.getElementById('btn-next');
 const preg1 = document.getElementById('preguntas');
