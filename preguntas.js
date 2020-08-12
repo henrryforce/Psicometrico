@@ -51,6 +51,13 @@ function generaPregTip1(i){
    function generaPregtip2(i){
      var ar = document.createElement('article');
      ar.setAttribute("id",preguntas[i]['id']);
-     ar.innerText=preguntas[i]['pregunta'];
+     
+     var serie='';
+     for(var j=0;j<preguntas[i]['opciones'].length;j++){
+          serie += preguntas[i]['opciones'][j] + ' ';
+     console.log(serie);
+     }
+     ar.innerText=`${preguntas[i]['pregunta']} ${serie}`;
+   
      preg1.appendChild(ar);        
    }
