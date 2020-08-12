@@ -69,9 +69,9 @@ function generaPregTip1(i){
         ar.innerHTML=`
         <p>${preguntas[i]['pregunta']}</p>
         <table>
-        <div class="input-group mb-3">
-        <div class="input-group-prepend">
-        <label class="input-group-text" for="inputGroupSelect01">Options</label>
+        <div class="form-group mb-3">
+        <div class="form-group-prepend">
+        <label class="form-group-text" for="inputGroupSelect01">Options</label>
         </div>
         <select class="custom-select" id="inputGroupSelect01">
         <option value="1">${preguntas[i]['opciones'][0]}</option>
