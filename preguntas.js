@@ -2,6 +2,7 @@
 let preguntas=[];
 const btnnext = document.getElementById('btn-next');
 const preg1 = document.getElementById('preguntas');
+const res = document.getElementById('btn-fin');
 document.addEventListener("DOMContentLoaded", ready);
 function ready() {
      const xhr = new XMLHttpRequest();
@@ -69,10 +70,15 @@ function generaPregTip1(i){
      
                                 <span class="input-group-text" id="">Primer valor y segundo valor</span>
                             
-                            <input type="text"  class="form-control">
-                            <input type="text" class="form-control">
+                            <input type="text" id="preg${preguntas[i]['id']}" class="form-control">
+                            <input type="text" id="pregr${preguntas[i]['id']}" class="form-control">
      `;
      ar.appendChild(input);
    
      preg1.appendChild(ar);        
    }
+res.addEventListener('click',function(){
+     const art =document.querySelectorAll('#preguntas article');
+     
+     console.log(document.querySelectorAll(`${art} #preg`) );
+});
