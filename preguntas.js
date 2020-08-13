@@ -1,5 +1,6 @@
-let contpreg=5;
+
 let preguntas=[];
+const btnnext = document.getElementById('btn-next');
 const preg1 = document.getElementById('preguntas');
 document.addEventListener("DOMContentLoaded", ready);
 function ready() {
@@ -9,6 +10,8 @@ function ready() {
           if (this.status === 200) {
               
                 preguntas = JSON.parse(this.responseText);
+                cpc=0;
+                contpreg=5;
                 crea5preguntas();
                 delayOut();
 
@@ -16,25 +19,16 @@ function ready() {
      }
      xhr.send()
 }
-function delayOut(){
-     document.getElementById('timer').innerHTML = 'La prueba caduca en <span id="contador">10</span> segundos';
-     var cont = 600;
-     setInterval(function(){
-         cont--;
-         document.getElementById('contador').innerHTML = cont;
-         if(cont == 0){
-             window.location = 'resultados.html';
-         }
-     },1000);
- }
 function crea5preguntas(){
-     for(var i=0;i<contpreg;i++){  
+
+     for(i=0;i<60;i++){  
      if (preguntas[i]['tipo'] === 1) {
           
           generaPregTip1(i);
      }else{
           generaPregtip2(i);
      }
+
 }
 }
 function generaPregTip1(i){
@@ -68,9 +62,18 @@ function generaPregTip1(i){
      var serie='';
      for(var j=0;j<preguntas[i]['opciones'].length;j++){
           serie += preguntas[i]['opciones'][j] + ' ';
-     console.log(serie);
      }
      ar.innerText=`${preguntas[i]['pregunta']} ${serie}`;
+     var input = document.createElement('div');
+     input.setAttribute("class",'input-group-prepend');
+     input.innerHTML=`
+     
+                                <span class="input-group-text" id="">Primer valor y segundo valor</span>
+                            
+                            <input type="text"  class="form-control">
+                            <input type="text" class="form-control">
+     `;
+     ar.appendChild(input);
    
      preg1.appendChild(ar);        
    }
