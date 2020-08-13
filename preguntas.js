@@ -2,6 +2,7 @@
 let preguntas=[];
 const btnnext = document.getElementById('btn-next');
 const preg1 = document.getElementById('preguntas');
+const res = document.getElementById('btn-fin');
 document.addEventListener("DOMContentLoaded", ready);
 function ready() {
      const xhr = new XMLHttpRequest();
@@ -48,21 +49,23 @@ function generaPregTip1(i){
         var ar = document.createElement('article');
         ar.setAttribute("id",preguntas[i]['id']);
         ar.innerHTML=`
+        <br>
         <p>${preguntas[i]['pregunta']}</p>
-        <table>
+        
         <div class="form-group mb-3">
         <div class="form-group-prepend">
         <label class="form-group-text" for="inputGroupSelect01">Options</label>
         </div>
-        <select class="custom-select" id="inputGroupSelect01">
-        <option value="1">${preguntas[i]['opciones'][0]}</option>
-        <option value="2">${preguntas[i]['opciones'][1]}</option>
-        <option value="3">${preguntas[i]['opciones'][2]}</option>
-        <option value="4">${preguntas[i]['opciones'][3]}</option>
-        <option value="5">${preguntas[i]['opciones'][4]}</option>
+        <div id="resp" class="resp${preguntas[i]['id']}">
+        <select class="custom-select respuesta" id="inputGroupSelect01 >
+        <option value="${preguntas[i]['opciones'][0]}">${preguntas[i]['opciones'][0]}</option>
+        <option value="${preguntas[i]['opciones'][1]}">${preguntas[i]['opciones'][1]}</option>
+        <option value="${preguntas[i]['opciones'][2]}">${preguntas[i]['opciones'][2]}</option>
+        <option value="${preguntas[i]['opciones'][4]}">${preguntas[i]['opciones'][3]}</option>
+        <option value="${preguntas[i]['opciones'][5]}">${preguntas[i]['opciones'][4]}</option>
         </select>
-        </div>            
-            </table>
+        </div>
+        </div> 
         `;
        preg1.appendChild(ar);        
    
@@ -78,14 +81,54 @@ function generaPregTip1(i){
      ar.innerText=`${preguntas[i]['pregunta']} ${serie}`;
      var input = document.createElement('div');
      input.setAttribute("class",'input-group-prepend');
-     input.innerHTML=`
-     
-                                <span class="input-group-text" id="">Primer valor y segundo valor</span>
-                            
-                            <input type="text"  class="form-control">
-                            <input type="text" class="form-control">
+     input.innerHTML=`   <span class="input-group-text" >Primer valor y segundo valor</span>
+                                <div id="resp" class="${preguntas[i]['id']}">
+                            <input type="text" id="preg${preguntas[i]['id']}" class="form-control respuesta">
+                            <input type="text" id="pregr${preguntas[i]['id']}" class="form-control respuesta">
+                            </div>
+
      `;
      ar.appendChild(input);
    
      preg1.appendChild(ar);        
    }
+res.addEventListener('click',function(){
+     
+     const art =document.querySelectorAll('.respuesta');
+     let res1=4,res2=5,m='';     
+     let todr=[];
+     let puntaje=0;
+          for(let i=0;i<art.length;i++){
+               
+               if(i===res1){
+                    m+=(art[i].value);                    
+                    res1+=6                    
+               } else if(i===res2){                    
+                    m+=','+art[i].value;                    
+                    res2+=6;                    
+                    todr.push(m);
+                    m='';
+               }else if(i !==res1 && i !== res2){
+                    todr.push(art[i].value);
+               }
+
+                  //  console.log(`num preg:${i}, ${art[i].value}`);     
+               
+          }
+          
+          
+          for(let p=0;p<60;p++){
+               if(preguntas[p]['respuesta']==todr[p]){
+                    console.log('son iguales');
+                    puntaje+=1;
+               }else{
+                    console.log('son diferentes');
+               }/*
+               console.log(preguntas[p]['respuesta']);
+               console.log(todr[p]);
+               console.log(p)*/
+          }
+          
+          console.log(puntaje);
+          
+});
