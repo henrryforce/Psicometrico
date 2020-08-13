@@ -57,7 +57,7 @@ function generaPregTip1(i){
         <label class="form-group-text" for="inputGroupSelect01">Options</label>
         </div>
         <div id="resp" class="resp${preguntas[i]['id']}">
-        <select class="custom-select" id="inputGroupSelect01">
+        <select class="custom-select respuesta" id="inputGroupSelect01 >
         <option value="${preguntas[i]['opciones'][0]}">${preguntas[i]['opciones'][0]}</option>
         <option value="${preguntas[i]['opciones'][1]}">${preguntas[i]['opciones'][1]}</option>
         <option value="${preguntas[i]['opciones'][2]}">${preguntas[i]['opciones'][2]}</option>
@@ -81,10 +81,10 @@ function generaPregTip1(i){
      ar.innerText=`${preguntas[i]['pregunta']} ${serie}`;
      var input = document.createElement('div');
      input.setAttribute("class",'input-group-prepend');
-     input.innerHTML=`   <span class="input-group-text" id="">Primer valor y segundo valor</span>
+     input.innerHTML=`   <span class="input-group-text" >Primer valor y segundo valor</span>
                                 <div id="resp" class="${preguntas[i]['id']}">
-                            <input type="text" id="preg${preguntas[i]['id']}" class="form-control">
-                            <input type="text" id="pregr${preguntas[i]['id']}" class="form-control">
+                            <input type="text" id="preg${preguntas[i]['id']}" class="form-control respuesta">
+                            <input type="text" id="pregr${preguntas[i]['id']}" class="form-control respuesta">
                             </div>
 
      `;
@@ -93,8 +93,42 @@ function generaPregTip1(i){
      preg1.appendChild(ar);        
    }
 res.addEventListener('click',function(){
-     let pr = 'preguntaNo1';
-     const art =document.querySelectorAll('#resp');
      
-     console.log( art);
+     const art =document.querySelectorAll('.respuesta');
+     let res1=4,res2=5,m='';     
+     let todr=[];
+     let puntaje=0;
+          for(let i=0;i<art.length;i++){
+               
+               if(i===res1){
+                    m+=(art[i].value);                    
+                    res1+=6                    
+               } else if(i===res2){                    
+                    m+=','+art[i].value;                    
+                    res2+=6;                    
+                    todr.push(m);
+                    m='';
+               }else if(i !==res1 && i !== res2){
+                    todr.push(art[i].value);
+               }
+
+                  //  console.log(`num preg:${i}, ${art[i].value}`);     
+               
+          }
+          
+          
+          for(let p=0;p<60;p++){
+               if(preguntas[p]['respuesta']==todr[p]){
+                    console.log('son iguales');
+                    puntaje+=1;
+               }else{
+                    console.log('son diferentes');
+               }/*
+               console.log(preguntas[p]['respuesta']);
+               console.log(todr[p]);
+               console.log(p)*/
+          }
+          
+          console.log(puntaje);
+          
 });
