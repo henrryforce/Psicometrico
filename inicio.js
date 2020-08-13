@@ -33,7 +33,7 @@ btn.addEventListener('submit',function(e){
      dato.push(seCarrera);
      dato.push(grado);
           enviardatos(dato);
-          location.href='preguntas.html';
+          window.location.href='preguntas.html';
      }, 1000);
      }
      

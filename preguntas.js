@@ -22,12 +22,13 @@ function ready() {
 }
 function delayOut(){
      document.getElementById('timer').innerHTML = 'La prueba caduca en <span id="countDown"></span> seconds....';
-     var count = 600;
+     var count = 6;
      setInterval(function(){
          count--;
          document.getElementById('countDown').innerHTML = count;
          if (count == 0) {
-             window.location = 'resultados.html'; 
+              terminar();
+             //window.location = 'resultados.html'; 
          }
      },1000);
  }
@@ -92,8 +93,8 @@ function generaPregTip1(i){
    
      preg1.appendChild(ar);        
    }
-res.addEventListener('click',function(){
-     
+   res.addEventListener('click',terminar());/*
+res.addEventListener('click',function(){     
      const art =document.querySelectorAll('.respuesta');
      let res1=4,res2=5,m='';     
      let todr=[];
@@ -111,24 +112,47 @@ res.addEventListener('click',function(){
                }else if(i !==res1 && i !== res2){
                     todr.push(art[i].value);
                }
-
-                  //  console.log(`num preg:${i}, ${art[i].value}`);     
-               
           }
           
           
           for(let p=0;p<60;p++){
                if(preguntas[p]['respuesta']==todr[p]){
-                    console.log('son iguales');
                     puntaje+=1;
-               }else{
-                    console.log('son diferentes');
-               }/*
-               console.log(preguntas[p]['respuesta']);
-               console.log(todr[p]);
-               console.log(p)*/
+               }
           }
-          
+
+          localStorage.setItem('respuestasP',JSON.stringify(todr));
+          localStorage.setItem('puntajeF',JSON.stringify(puntaje));
           console.log(puntaje);
+          window.location = 'resultados.html';
           
-});
+});*/
+function terminar(){
+     const art =document.querySelectorAll('.respuesta');
+     let res1=4,res2=5,m='';     
+     let todr=[];
+     let puntaje=0;
+          for(let i=0;i<art.length;i++){
+               
+               if(i===res1){
+                    m+=(art[i].value);                    
+                    res1+=6                    
+               } else if(i===res2){                    
+                    m+=','+art[i].value;                    
+                    res2+=6;                    
+                    todr.push(m);
+                    m='';
+               }else if(i !==res1 && i !== res2){
+                    todr.push(art[i].value);
+               }
+          }         
+          for(let p=0;p<60;p++){
+               if(preguntas[p]['respuesta']==todr[p]){
+                    puntaje+=1;
+               }
+          }
+         localStorage.setItem('respuestasP',JSON.stringify(todr));
+          localStorage.setItem('puntajeF',JSON.stringify(puntaje));
+          console.log(puntaje);
+          window.location = 'resultados.html';
+}
