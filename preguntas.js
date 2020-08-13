@@ -10,10 +10,23 @@ function ready() {
               
                 preguntas = JSON.parse(this.responseText);
                 crea5preguntas();
+                delayOut();
+
           }
      }
      xhr.send()
 }
+function delayOut(){
+     document.getElementById('timer').innerHTML = 'La prueba caduca en <span id="contador">10</span> segundos';
+     var cont = 600;
+     setInterval(function(){
+         cont--;
+         document.getElementById('contador').innerHTML = cont;
+         if(cont == 0){
+             window.location = 'resultados.html';
+         }
+     },1000);
+ }
 function crea5preguntas(){
      for(var i=0;i<contpreg;i++){  
      if (preguntas[i]['tipo'] === 1) {
