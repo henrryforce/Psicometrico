@@ -19,6 +19,18 @@ function ready() {
      }
      xhr.send()
 }
+function delayOut(){
+     document.getElementById('timer').innerHTML = 'La prueba caduca en <span id="countDown"></span> seconds....';
+     var count = 600;
+     setInterval(function(){
+         count--;
+         document.getElementById('countDown').innerHTML = count;
+         if (count == 0) {
+             window.location = 'resultados.html'; 
+         }
+     },1000);
+ }
+
 function crea5preguntas(){
 
      for(i=0;i<60;i++){  
