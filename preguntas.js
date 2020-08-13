@@ -49,21 +49,23 @@ function generaPregTip1(i){
         var ar = document.createElement('article');
         ar.setAttribute("id",preguntas[i]['id']);
         ar.innerHTML=`
+        <br>
         <p>${preguntas[i]['pregunta']}</p>
-        <table>
+        
         <div class="form-group mb-3">
         <div class="form-group-prepend">
         <label class="form-group-text" for="inputGroupSelect01">Options</label>
         </div>
+        <div id="resp" class="resp${preguntas[i]['id']}">
         <select class="custom-select" id="inputGroupSelect01">
-        <option value="1">${preguntas[i]['opciones'][0]}</option>
-        <option value="2">${preguntas[i]['opciones'][1]}</option>
-        <option value="3">${preguntas[i]['opciones'][2]}</option>
-        <option value="4">${preguntas[i]['opciones'][3]}</option>
-        <option value="5">${preguntas[i]['opciones'][4]}</option>
+        <option value="${preguntas[i]['opciones'][0]}">${preguntas[i]['opciones'][0]}</option>
+        <option value="${preguntas[i]['opciones'][1]}">${preguntas[i]['opciones'][1]}</option>
+        <option value="${preguntas[i]['opciones'][2]}">${preguntas[i]['opciones'][2]}</option>
+        <option value="${preguntas[i]['opciones'][4]}">${preguntas[i]['opciones'][3]}</option>
+        <option value="${preguntas[i]['opciones'][5]}">${preguntas[i]['opciones'][4]}</option>
         </select>
-        </div>            
-            </table>
+        </div>
+        </div> 
         `;
        preg1.appendChild(ar);        
    
@@ -79,19 +81,20 @@ function generaPregTip1(i){
      ar.innerText=`${preguntas[i]['pregunta']} ${serie}`;
      var input = document.createElement('div');
      input.setAttribute("class",'input-group-prepend');
-     input.innerHTML=`
-     
-                                <span class="input-group-text" id="">Primer valor y segundo valor</span>
-                            
+     input.innerHTML=`   <span class="input-group-text" id="">Primer valor y segundo valor</span>
+                                <div id="resp" class="${preguntas[i]['id']}">
                             <input type="text" id="preg${preguntas[i]['id']}" class="form-control">
                             <input type="text" id="pregr${preguntas[i]['id']}" class="form-control">
+                            </div>
+
      `;
      ar.appendChild(input);
    
      preg1.appendChild(ar);        
    }
 res.addEventListener('click',function(){
-     const art =document.querySelectorAll('#preguntas article');
+     let pr = 'preguntaNo1';
+     const art =document.querySelectorAll('#resp');
      
-     console.log(document.querySelectorAll(`${art} #preg`) );
+     console.log( art);
 });
