@@ -1,4 +1,5 @@
 const res = document.getElementById('resultado');
+const btn = document.getElementById('btn-fin');
 document.addEventListener("DOMContentLoaded", ready);
 function ready(){
      let datos,puntaje,respuestas;
@@ -6,9 +7,6 @@ function ready(){
           datos =JSON.parse(localStorage.getItem('datosP'));
           puntaje =JSON.parse(localStorage.getItem('puntajeF'));
           respuestas=JSON.parse(localStorage.getItem('respuestasP'));
-          console.log(datos);
-          console.log(puntaje);
-          console.log(respuestas);
           res.innerHTML=`
           <h5 class="card-title">RESULTADO OBTENIDO</h5>
           <p class="card-text">${puntaje}/60</p>
@@ -19,5 +17,10 @@ function ready(){
           <a href="#" class="btn btn-primary">Finalizar</a>
           `;
      }
-     
+     let p =  localStorage.getItem('puntajeF');
+     console.log(p)   ;
+}
+btn.addEventListener('click',terminar);
+function terminar(){
+console.log('click');
 }
