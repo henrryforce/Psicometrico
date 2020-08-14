@@ -58,8 +58,8 @@ function generaPregTip1(i){
         <option value="${preguntas[i]['opciones'][0]}">${preguntas[i]['opciones'][0]}</option>
         <option value="${preguntas[i]['opciones'][1]}">${preguntas[i]['opciones'][1]}</option>
         <option value="${preguntas[i]['opciones'][2]}">${preguntas[i]['opciones'][2]}</option>
-        <option value="${preguntas[i]['opciones'][4]}">${preguntas[i]['opciones'][3]}</option>
-        <option value="${preguntas[i]['opciones'][5]}">${preguntas[i]['opciones'][4]}</option>
+        <option value="${preguntas[i]['opciones'][3]}">${preguntas[i]['opciones'][3]}</option>
+        <option value="${preguntas[i]['opciones'][4]}">${preguntas[i]['opciones'][4]}</option>
         </select>
         </div>
         </div> 
@@ -118,5 +118,6 @@ function terminar(){
          localStorage.setItem('respuestasP',JSON.stringify(todr));
           localStorage.setItem('puntajeF',JSON.stringify(puntaje));
           console.log(puntaje);
-          window.location = 'resultados.html';
+          console.log(todr);
+          //window.location = 'resultados.html';
 }
