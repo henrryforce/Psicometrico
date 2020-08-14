@@ -14,11 +14,10 @@ function ready(){
           <p class="card-text"><small class="text-muted">Matricula:${datos[1]} </p></small>
           <p class="card-text"><small class="text-muted">Carrera:${datos[2]}</p></small> 
           <p class="card-text"><small class="text-muted">Grado:${datos[3]} </small></p>
-          <a href="#" class="btn btn-primary">Finalizar</a>
           `;
      }
      let p =  localStorage.getItem('puntajeF');
-     console.log(p)   ;
+
 }
 btn.addEventListener('click',terminar);
 function terminar(){
