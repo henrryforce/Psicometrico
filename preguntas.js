@@ -8,21 +8,17 @@ function ready() {
      const xhr = new XMLHttpRequest();
      xhr.open('GET', 'preguntas.json', true);
      xhr.onload = function () {
-          if (this.status === 200) {
-              
+          if (this.status === 200) {              
                 preguntas = JSON.parse(this.responseText);
-                cpc=0;
-                contpreg=5;
                 crea5preguntas();
                 delayOut();
-
           }
      }
      xhr.send()
 }
 function delayOut(){
      document.getElementById('timer').innerHTML = 'La prueba caduca en <span id="countDown"></span> seconds....';
-     var count = 6;
+     var count = 600;
      setInterval(function(){
          count--;
          document.getElementById('countDown').innerHTML = count;
@@ -58,7 +54,7 @@ function generaPregTip1(i){
         <label class="form-group-text" for="inputGroupSelect01">Options</label>
         </div>
         <div id="resp" class="resp${preguntas[i]['id']}">
-        <select class="custom-select respuesta" id="inputGroupSelect01 >
+        <select class="custom-select respuesta" id="inputGroupSelect01" >
         <option value="${preguntas[i]['opciones'][0]}">${preguntas[i]['opciones'][0]}</option>
         <option value="${preguntas[i]['opciones'][1]}">${preguntas[i]['opciones'][1]}</option>
         <option value="${preguntas[i]['opciones'][2]}">${preguntas[i]['opciones'][2]}</option>
@@ -93,8 +89,9 @@ function generaPregTip1(i){
    
      preg1.appendChild(ar);        
    }
-   res.addEventListener('click',terminar());
+   res.addEventListener('click',terminar);
 function terminar(){
+     console.log('click');
      const art =document.querySelectorAll('.respuesta');
      let res1=4,res2=5,m='';     
      let todr=[];
@@ -112,7 +109,7 @@ function terminar(){
                }else if(i !==res1 && i !== res2){
                     todr.push(art[i].value);
                }
-          }         
+          }
           for(let p=0;p<60;p++){
                if(preguntas[p]['respuesta']==todr[p]){
                     puntaje+=1;
