@@ -119,5 +119,5 @@ function terminar(){
           localStorage.setItem('puntajeF',JSON.stringify(puntaje));
           console.log(puntaje);
           console.log(todr);
-          //window.location = 'resultados.html';
+          window.location = 'resultados.html';
 }
