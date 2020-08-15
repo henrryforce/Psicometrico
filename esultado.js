@@ -1,6 +1,7 @@
 const res = document.getElementById('resultado');
 const btn = document.getElementById('btn-fin');
 document.addEventListener("DOMContentLoaded", ready);
+let pdf=[];
 function ready(){
      let datos,puntaje,respuestas;
      if(localStorage.getItem('datosP')!==null){
@@ -21,5 +22,19 @@ function ready(){
 }
 btn.addEventListener('click',terminar);
 function terminar(){
-console.log('click');
+     $.ajax({
+          type: "POST",
+          url: "Json_toPDF.php",
+          data: { data: 'hola' },
+          dataType: 'json',
+          success: function(data) {
+              //$('#output').html(data);
+              alert(data.mensaje);
+          },
+          error: function(error) {
+              alert(error);
+              console.log(error);
+          }
+      });
+    
 }
