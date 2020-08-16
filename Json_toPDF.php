@@ -10,6 +10,9 @@
    # $mpdf -> Ouput();
    
 
-   echo '¡Hola ' . htmlspecialchars($_COOKIE["color_favorito"]) . '!';
+  var_dump($_COOKIE["datosP"]) ;
+  var_dump($_COOKIE["respuestas"]);
+  var_dump($_COOKIE["puntaje"]);
+  var_dump($_COOKIE["tab"]);
 
 ?>

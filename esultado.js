@@ -24,24 +24,33 @@ btn.addEventListener('click',terminar);
 function terminar(){
  let da =localStorage.getItem('datosP');
  let pun =  localStorage.getItem('puntajeF');
-
+ let res = localStorage.getItem('respuestasP');
+let tab ='';
  if(pun <=26){
       console.log('Muy inferior 10%');
+      tab ='Muy inferior 10%';
  }else if(pun >= 27 && pun <=33){
      console.log('Inferior 20%');
+     tab ='Inferior 20%';
  }else if(pun >=34 && pun <=43){
      console.log('Mediano 40%');
+     tab ='Mediano 40%';
  }else if(pun >=44 && pun <=50){
      console.log('Superior 20%');
+     tab ='Superior 20%';
  }else if(pun >50){
      console.log('Excelente 10%');
+     tab ='Excelente 10%';
  }
- document.cookie = "color_favorito=amarillo";
+ document.cookie =`datosP=${da}`;
+ document.cookie=`respuestas=${res}`;
+ document.cookie=`puntaje=${pun}`;
+document.cookie=`tab=${tab}`;
  /*
     $.post('Json_toPDF.php', {
-              "datos": da,
+              "datos": JSON.stringify(da),
             },function(data) {
               console.log('procesamiento finalizado', data);
           });
-   */ 
+   */
 }
