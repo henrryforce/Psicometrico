@@ -22,19 +22,31 @@ function ready(){
 }
 btn.addEventListener('click',terminar);
 function terminar(){
-     $.ajax({
-          type: "POST",
-          url: "Json_toPDF.php",
-          data: { data: 'hola' },
-          dataType: 'json',
-          success: function(data) {
-              //$('#output').html(data);
-              alert(data.mensaje);
-          },
-          error: function(error) {
-              alert(error);
-              console.log(error);
-          }
-      });
-    
+ let da =localStorage.getItem('datosP');
+ let pun =  localStorage.getItem('puntajeF');
+ if(pun <=26){
+      console.log('Muy inferior 10%');
+ }else if(pun >= 27 && pun <=33){
+     console.log('Inferior 20%');
+ }else if(pun >=34 && pun <=43){
+     console.log('Mediano 40%');
+ }else if(pun >=44 && pun <=50){
+     console.log('Superior 20%');
+ }else if(pun >50){
+     console.log('Excelente 10%');
+ }
+ var formData = new FormData();
+
+formData.append("username", "Groucho");
+formData.append("accountnum", 123456);
+var request = new XMLHttpRequest();
+request.open("POST", "Json_toPDF.php");
+request.send(formData);
+ /*
+    $.post('Json_toPDF.php', {
+              "datos": da,
+            },function(data) {
+              console.log('procesamiento finalizado', data);
+          });
+   */ 
 }

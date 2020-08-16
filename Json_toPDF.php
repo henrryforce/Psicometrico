@@ -8,10 +8,10 @@
  #   $mpdf -> WriteHTML($html);
   #  $mpdf -> Output('untitled-psicometrico.pdf', 'F');
    # $mpdf -> Ouput();
-   $resultado = array('mensaje' => '');
-   if( isset($_POST['data']) ) {
-       $resultado['mensaje'] = "Viene el valor : ".$_POST['data'];
-       echo json_encode($resultado);
-       exit;
+   
+   if( isset($_POST['datos']) ) {
+    echo ($_POST ["datos"]);
+   }else{
+       echo 'no daots';
    }
 ?>
