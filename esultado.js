@@ -42,15 +42,19 @@ let tab ='';
      console.log('Excelente 10%');
      tab ='Excelente 10%';
  }
+
+let info=[];
+info.push(da);
+info.push(res);
+info.push(pun);
+info.push(tab);
+window.location.href=`Json_toPDF.php?datos=${info}`;
+ /*
  document.cookie =`datosP=${da}`;
  document.cookie=`respuestas=${res}`;
  document.cookie=`puntaje=${pun}`;
-document.cookie=`tab=${tab}`;
+document.cookie=`tab=${tab}`;*/
  /*
-    $.post('Json_toPDF.php', {
-              "datos": JSON.stringify(da),
-            },function(data) {
-              console.log('procesamiento finalizado', data);
-          });
+    
    */
 }
