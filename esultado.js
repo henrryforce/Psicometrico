@@ -24,6 +24,7 @@ btn.addEventListener('click',terminar);
 function terminar(){
  let da =localStorage.getItem('datosP');
  let pun =  localStorage.getItem('puntajeF');
+
  if(pun <=26){
       console.log('Muy inferior 10%');
  }else if(pun >= 27 && pun <=33){
@@ -35,13 +36,7 @@ function terminar(){
  }else if(pun >50){
      console.log('Excelente 10%');
  }
- var formData = new FormData();
-
-formData.append("username", "Groucho");
-formData.append("accountnum", 123456);
-var request = new XMLHttpRequest();
-request.open("POST", "Json_toPDF.php");
-request.send(formData);
+ document.cookie = "color_favorito=amarillo";
  /*
     $.post('Json_toPDF.php', {
               "datos": da,

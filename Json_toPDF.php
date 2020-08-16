@@ -9,9 +9,7 @@
   #  $mpdf -> Output('untitled-psicometrico.pdf', 'F');
    # $mpdf -> Ouput();
    
-   if( isset($_POST['datos']) ) {
-    echo ($_POST ["datos"]);
-   }else{
-       echo 'no daots';
-   }
+
+   echo '¡Hola ' . htmlspecialchars($_COOKIE["color_favorito"]) . '!';
+
 ?>
