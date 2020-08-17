@@ -18,17 +18,29 @@
     $pdf->AddPage();
     $pdf->SetFont('Arial','B',10);
     
-    $datos = $_GET['datos'];
+    $datos =json_decode($_GET['datos']);
+    /*
     var_dump($_GET['datos']);
     var_dump($_GET['puntaje']);
     var_dump($_GET['resp']);
     var_dump($_GET['tabu']);
-
+*/
 
     $pdf->Cell(40,10,'Datos');
     $pdf->Cell(40,10,'Respuestas');
     $pdf->Ln(10);
-    foreach($datos)
+    
+  
+    //echo $datos[1];
+    for($i=0;$i<4;$i++){
+      $pdf->Cell(40,10,$datos[$i]);      
+      $pdf->Ln(10);
+    }
+     
+
+  
+  $pdf->Output();
+  ob_end_flush();
     /*
     $array1= $array[0][0];
     $array2= $array[0][1];
