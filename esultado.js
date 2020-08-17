@@ -48,7 +48,7 @@ info.push(da);
 info.push(res);
 info.push(pun);
 info.push(tab);
-window.location.href=`Json_toPDF.php?datos=${info}`;
+window.location.href=`Json_toPDF.php?datos=${da}&puntaje=${pun}&resp=${res}&tabu=${tab}`;
  /*
  document.cookie =`datosP=${da}`;
  document.cookie=`respuestas=${res}`;
